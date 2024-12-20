@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "0b87b16a-8614-450d-ac55-70409ad71a22",
+		"name": "Catálogo de bombones",
+		"description": "Con esta colección, podrás ejecutar las operaciones básicas de un sistema REST para gestionar un catálogo de bombones. Entre las operaciones disponibles, encontrarás:\n\n1. **Recuperar la información de todos los bombones disponibles**: Verás la lista completa de bombones que hay en el catálogo y los detalles de cada uno de ellos.\n    \n2. **Consultar un bombón específico por su ID**: Obtendrás los detalles de un bombón en concreto.\n    \n3. **Insertar un nuevo bombón**: Añade una nuevo bombón con sus detalles al catálogo. Esta opción estaría disponilbe solo para el administrador de la tienda.\n    \n4. **Modificar la información de un bombón**: Actualiza la información de un bombón en específico por su ID. Esta opción estaría disponilbe solo para el administrador de la tienda.\n    \n5. **Eliminar un bombón**: Elimina un bombón del catálogo. Esta opción estaría disponilbe solo para el administrador de la tienda.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34863785"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los bombones",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un bombón por su ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/DWES03/api/v1/public/bombones/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DWES03",
+						"api",
+						"v1",
+						"public",
+						"bombones",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un bombón nuevo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \r\n      \"id\":10,\r\n      \"nombre\": \"Bombón de Caramelo\",\r\n      \"descripcion\": \"Bombón relleno de caramelo\",\r\n      \"precio\": 1.7,\r\n      \"imagen\": \"caramelo.jpg\",\r\n      \"stock\": 30\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DWES03/api/v1/public/bombones/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DWES03",
+						"api",
+						"v1",
+						"public",
+						"bombones",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar información de un bombón por su ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"nombre\": \"Bombón de Nuez\",\r\n      \"descripcion\": \"Bombón relleno de nuez\",\r\n      \"precio\": 1.6,\r\n      \"imagen\": \"nuez.jpg\",\r\n      \"stock\": 10\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/DWES03/api/v1/public/bombones/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DWES03",
+						"api",
+						"v1",
+						"public",
+						"bombones",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un bombón ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/DWES03/api/v1/public/bombones/delete/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"DWES03",
+						"api",
+						"v1",
+						"public",
+						"bombones",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

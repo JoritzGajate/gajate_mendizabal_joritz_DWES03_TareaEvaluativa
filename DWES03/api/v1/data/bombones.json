@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "nombre": "Bomb\u00f3n de Chocolate",
+        "descripcion": "Delicioso bomb\u00f3n de chocolate negro",
+        "precio": 1.5,
+        "imagen": "chocolate.jpg",
+        "stock": 100
+    },
+    {
+        "id": 2,
+        "nombre": "Bomb\u00f3n de Nuez",
+        "descripcion": "Bomb\u00f3n relleno de nuez",
+        "precio": 1.6,
+        "imagen": "nuez.jpg",
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "nombre": "Bomb\u00f3n de Fresa",
+        "descripcion": "Bomb\u00f3n con relleno de fresa",
+        "precio": 1.8,
+        "imagen": "fresa.jpg",
+        "stock": 75
+    },
+    {
+        "id": 4,
+        "nombre": "Bomb\u00f3n de Menta",
+        "descripcion": "Bomb\u00f3n de chocolate con menta",
+        "precio": 1.6,
+        "imagen": "menta.jpg",
+        "stock": 80
+    },
+    {
+        "id": 5,
+        "nombre": "Bombón de Coco",
+        "descripcion": "Bombón con relleno de coco",
+        "precio": 1.7,
+        "imagen": "coco.jpg",
+        "stock": 60
+    },
+    {
+        "id": 6,
+        "nombre": "Bomb\u00f3n de Avellana",
+        "descripcion": "Bomb\u00f3n con relleno de avellana",
+        "precio": 2,
+        "imagen": "avellana.jpg",
+        "stock": 40
+    },
+    {
+        "id": 7,
+        "nombre": "Bomb\u00f3n de Caramelo",
+        "descripcion": "Bomb\u00f3n relleno de caramelo",
+        "precio": 1.7,
+        "imagen": "caramelo.jpg",
+        "stock": 30
+    }
+
+]
